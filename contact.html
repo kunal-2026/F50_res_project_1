@@ -1,19 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Tasty Recipes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contect.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Document</title>
 </head>
-<body class="body"> 
-    <header>
+<body>
+
+      <header>
         <div class="container"> 
             <h1 class="logo"><img src="assets/imag/logo.png"  width="40px">Delicous Recipe</h1>
             <nav>
-                <ul class="nav-list">
-                    <li class="list-op">HOME</li>
+                <div class="menu-icon">&#9776;</div>
+
+                <div class="n-list">
+
+                    <ul class="nav-list">
+                     <li class="list-op"><a href="indext.html">HOME</a></li>
                     <li class="recipes-op list-op">
                           <!-- rop = recipes-op -->
                         <a href="">
@@ -25,62 +32,134 @@
                             <li class="rop-li"><a href="vag.html">Vegetable Recipes</a></li>
                         </ul>
                     </li>
-                    <li class="list-op">CONTACT</li>
+                    <li class="list-op"><a href="contact.html">CONTACT</a></li>
                     <li class="list-op"><a href="about.html">ABOUT</a></li>
                 </ul>
+
+                </div>
+                
             </nav>
         </div>
     </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you! Let's share the joy of cooking.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section class="contact-section">
 
-    <div class="leaf leaf-left">🌿</div>
-    <div class="leaf leaf-right">🌿</div>
-
-    <div class="contact-title">
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you!</p>
-    </div>
-
-    <div class="contact-container">
-
-        <!-- Food Illustration -->
-        <div class="food-logo">
-            <div class="chef">👨‍🍳</div>
-            <p>❤️ 🍴</p>
-            <h3>Made With Love</h3>
-        </div>
-
-        <!-- Contact Information -->
         <div class="contact-info">
+            <h2>Let's Talk!</h2>
+            <p>
+                Have a question about a recipe, need cooking tips,
+                or want to share your experience? Contact us anytime.
+            </p>
 
-            <div class="contact-item">
-                <div class="contact-icon">✉️</div>
+            <div class="info-item">
+              
                 <div>
-                    <h3>Email Us</h3>
-                    <p>hello@pecipe.com</p>
+                    <h3>Our Location</h3>
+                    <p>Nagpur, Maharashtra, India</p>
                 </div>
             </div>
 
-            <div class="contact-item">
-                <div class="contact-icon">📞</div>
+            <div class="info-item">
+            
+                <div>
+                    <h3>Email Us</h3>
+                    <p>hello@tastyrecipes.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+               
                 <div>
                     <h3>Call Us</h3>
                     <p>+91 98765 43210</p>
                 </div>
             </div>
 
-            <div class="contact-item">
-                <div class="contact-icon">📍</div>
+            <div class="info-item">
                 <div>
-                    <h3>Our Address</h3>
-                    <p>123 Recipe Lane,<br>
-                    Foodie City, India</p>
+                    <h3>Working Hours</h3>
+                    <p>Monday - Saturday: 9 AM - 6 PM</p>
                 </div>
             </div>
-
         </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post">
+
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Enter subject">
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="recipe-footer">
+
+
+    <div class="footer-content">
+
+        <div class="chef-icon">
+            <i class="fa-solid fa-cheese"></i>
+        </div>
+
+        <nav class="footer-links">
+            <a href="#">Delicious Recipes</a>
+            <span>•</span>
+            <a href="#">Cooking Tips</a>
+            <span>•</span>
+            <a href="#">About</a>
+            <span>•</span>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <p class="copyright" style="color: #596543;">
+            © 2026 Recipe Haven. All rights reserved.
+        </p>
+
     </div>
 
-</section>
+    
+
+</footer>
+
 </body>
 </html>
